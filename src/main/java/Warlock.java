@@ -7,4 +7,12 @@ public class Warlock extends Player {
         super(name, healthValue);
         creatures = new ArrayList<Creature>();
     }
+
+    public void fight(Player player, AttackingTool attackingTool) {
+        player.setHealthValue(player.getHealthValue() - attackingTool.getDamageValue());
+    }
+
+    public void vanishWeapon(Player player){
+        player.removeWeapons();
+    }
 }

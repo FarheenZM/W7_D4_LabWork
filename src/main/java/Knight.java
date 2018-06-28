@@ -8,6 +8,10 @@ public class Knight extends Player{
         this.armourValue = 50;
     }
 
+    public void fight(Player player, AttackingTool attackingTool) {
+        player.setHealthValue(player.getHealthValue() - attackingTool.getDamageValue());
+    }
+
     public int getArmourValue() {
         return armourValue;
     }

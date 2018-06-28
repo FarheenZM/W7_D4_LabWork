@@ -20,6 +20,7 @@ public abstract class Player {
         return healthValue;
     }
 
+
     public ArrayList<AttackingTool> getAttackingTools() {
         return attackingTools;
     }
@@ -35,5 +36,11 @@ public abstract class Player {
     public void setHealthValue(int healthValue) {
         this.healthValue = healthValue;
     }
+
+    public void removeWeapons(){
+        this.attackingTools.clear();
+    }
+
+    public abstract void fight(Player player, AttackingTool attackingTool);
 
 }
