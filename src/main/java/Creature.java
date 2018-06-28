@@ -1,13 +1,12 @@
-public class AttackingTool {
-
+public class Creature {
     private String type;
     private String name;
-    private int damageValue;
+    private int defendPoints;
 
-    public AttackingTool(String type, String name, int damageValue) {
+    public Creature(String type, String name, int defendPoints) {
         this.type = type;
         this.name = name;
-        this.damageValue = damageValue;
+        this.defendPoints = defendPoints;
     }
 
     public String getType() {
@@ -18,8 +17,7 @@ public class AttackingTool {
         return name;
     }
 
-    public int getDamageValue() {
-        return damageValue;
+    public int getDefendPoints() {
+        return defendPoints;
     }
-
 }

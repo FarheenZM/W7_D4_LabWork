@@ -23,4 +23,17 @@ public abstract class Player {
     public ArrayList<AttackingTool> getAttackingTools() {
         return attackingTools;
     }
+
+    public void addTool(AttackingTool tool){
+        this.attackingTools.add(tool);
+    }
+
+    public int countAttackingTools(){
+        return this.attackingTools.size();
+    }
+
+    public void setHealthValue(int healthValue) {
+        this.healthValue = healthValue;
+    }
+
 }
